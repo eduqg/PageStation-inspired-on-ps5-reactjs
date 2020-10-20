@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+body {
+  color: #fff;
+  background: #19171f;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: 'Lato', sans-serif;
+}
+
+button {
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#tsparticles {
+  position: absolute;
+  left: -5%;
+  bottom: 2%;
+  width: 110%;
+  height: 500px;
+  z-index: -1;
+  transform: rotate(-5deg);
+}
+
+@media only screen and (max-width: 1100px) {
+  #tsparticles {
+    height: 300px;
+  }
+}
+
+@keyframes appearFromTop {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+p.citation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  z-index: 100;
+  text-align: end;
+  pointer-events: none;
+  user-select: none;
+}

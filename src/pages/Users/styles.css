@@ -1,0 +1,261 @@
+.container-users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url('../../images/bgps5.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+}
+
+@keyframes appearFromRight {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateX(0px);
+  }
+}
+
+.animationContainerUsers {
+  animation: appearFromTop 0.8s;
+}
+
+.animationContainerUserSmall {
+  animation: appearFromRight 0.8s;
+}
+
+.animationContainerUserBig {
+  animation: appearFromRight 0.8s;
+}
+
+.content-users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 1000px;
+
+  z-index: 5;
+}
+
+.container-users h1 {
+  font-weight: 300;
+  font-size: 54px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  margin-top: 32px;
+}
+
+.container-users h2 {
+  font-weight: 300;
+  font-size: 32px;
+  margin: 12px 0;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+}
+
+.container-users span.time {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+
+  font-weight: 300;
+  font-size: 28px;
+  margin: 12px 0;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+}
+
+img.plus {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+div.user-selection {
+  width: 100%;
+  min-height: 300px;
+  margin: 64px;
+}
+
+div.users-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.user {
+  width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button.avatar-button {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 200px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.avatar-button div.white-circle {
+  display: flex;
+  align-items: center;
+  height: 240px;
+  width: 240px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border: 2px solid #19171f;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.user img.avatar {
+  margin: auto;
+}
+
+.user.active img.avatar {
+  width: 200px;
+  height: 200px;
+}
+
+.user.inactive img.avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.user.inactive div.white-circle {
+  height: 200px;
+  width: 200px;
+  border: 0;
+  box-shadow: none;
+}
+
+div.username {
+  margin-top: 32px;
+}
+
+div.username span {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 44px;
+  margin-left: 4px;
+  margin-right: 8px;
+}
+
+.controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controller span {
+  font-weight: 300;
+  transform: translateY(6px);
+}
+
+.controller svg {
+  width: 38px;
+  height: 38px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+}
+
+.options span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 44px;
+  margin-left: 4px;
+}
+
+.options svg {
+  width: 38px;
+  height: 38px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+div.power {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+div.power button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+div.power svg {
+  width: 32px;
+  height: 32px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 1200px) {
+  .container-users h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+
+  .container-users h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .container-users span.time {
+    top: 16px;
+    right: 32px;
+    font-size: 24px;
+  }
+
+  div.user-selection {
+    margin: 0px;
+  }
+
+  div.power {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-users h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .container-users h2 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .container-users span.time {
+    top: 4px;
+    right: 8px;
+    font-size: 14px;
+  }
+}
