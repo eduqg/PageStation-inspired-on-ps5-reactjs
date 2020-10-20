@@ -8,7 +8,9 @@ const App: React.FC = () => (
     <Routes />
     <p className="citation">
       <span>Inspired interface</span>
-      <span>Fan made by eduqg</span>
+      <span>
+        Fan made by <a href="https://github.com/eduqg">eduqg</a>
+      </span>
     </p>
   </Router>
 );

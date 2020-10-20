@@ -71,3 +71,9 @@ p.citation {
   pointer-events: none;
   user-select: none;
 }
+
+p.citation a {
+  pointer-events: all;
+  color: #1E90FF;
+  text-decoration: none;
+}
