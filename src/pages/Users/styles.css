@@ -216,7 +216,7 @@ div.power svg {
   color: rgba(255, 255, 255, 0.8);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 2000px) {
   .container-users h1 {
     margin: 0;
     font-size: 36px;
@@ -287,5 +287,11 @@ div.power svg {
 
   div.username {
     margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (min-height: 900px) {
+  div.user-selection {
+    margin: 100px;
   }
 }
