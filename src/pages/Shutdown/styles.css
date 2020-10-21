@@ -178,3 +178,22 @@ div.home button svg {
     display: none;
   }
 }
+
+@media only screen and (max-height: 600px) {
+  div.content-shutdown {
+    width: 100vw;
+  }
+
+  .content-info {
+    margin-right: 24px;
+  }
+
+  .content-info h1 {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .content-info h2 {
+    font-size: 24px;
+  }
+}

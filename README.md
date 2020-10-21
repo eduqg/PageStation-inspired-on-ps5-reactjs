@@ -3,6 +3,7 @@
 <p>
    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/eduqg/ps5-inspired-ui-reactjs?style=for-the-badge">
    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/eduqg/ps5-inspired-ui-reactjs?style=for-the-badge">
+   <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/3bb9f721-8af6-4eca-8030-85faaccda683/deploy-status">
 </p>
 
 A Fan made interface inpired on PS5 new UI.

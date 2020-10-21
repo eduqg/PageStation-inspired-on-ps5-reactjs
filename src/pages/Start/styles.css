@@ -143,3 +143,9 @@
   padding: 2px;
   z-index: 2;
 }
+
+@media only screen and (max-height: 600px) {
+  .content {
+    height: 240px;
+  }
+}

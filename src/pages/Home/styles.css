@@ -259,3 +259,24 @@ button.option-card:hover svg {
     margin: 0 4px;
   }
 }
+
+@media only screen and (max-height: 600px) {
+  div.game-info div.game-name {
+    font-size: 24px;
+  }
+
+  button.game-card.game-inactive {
+    border: 0;
+    min-width: 180px;
+    height: 200px;
+  }
+
+  button.game-card.game-active {
+    min-width: 200px;
+    height: 300px;
+  }
+
+  button.option-card svg {
+    margin: 0 4px;
+  }
+}

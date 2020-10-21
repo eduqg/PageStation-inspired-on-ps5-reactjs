@@ -259,3 +259,33 @@ div.power svg {
     font-size: 14px;
   }
 }
+
+@media only screen and (max-height: 600px) {
+  button.avatar-button {
+    min-height: 160px;
+  }
+
+  button.avatar-button div.white-circle {
+    height: 140px;
+    width: 140px;
+  }
+
+  .user.active img.avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user.inactive img.avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user.inactive div.white-circle {
+    height: 140px;
+    width: 140px;
+  }
+
+  div.username {
+    margin-top: 0px;
+  }
+}
