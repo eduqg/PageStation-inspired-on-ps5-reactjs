@@ -273,7 +273,7 @@ button.option-card:hover svg {
 
   button.game-card.game-active {
     min-width: 200px;
-    height: 300px;
+    height: 270px;
   }
 
   button.option-card svg {
